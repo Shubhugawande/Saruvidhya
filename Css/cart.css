@@ -22,7 +22,7 @@ body {
 .logo {
   height: 70px;
   width: 260px;
-  background-image: url("../Images/Logo.Png");
+  background-image: url("..Images/Logo.png");
   background-size: cover;
   background-position: center;
 }
