@@ -1,0 +1,179 @@
+/* Base styles */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Navbar section */
+
+.navbar {
+  background: #97d5ff;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logo {
+  height: 70px;
+  width: 260px;
+  background-image: url(/Images/Logo.png);
+  background-size: cover;
+}
+
+/* Hide checkbox */
+
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger Icon */
+
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+
+/* Nav links */
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: black;
+}
+
+/* main section */
+
+main {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.contact-container {
+  background: white;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-container h2 {
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.status-msg {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+  display: none;
+}
+
+
+/* Footer section */
+
+footer {
+  background: #343a40;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    color: black;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #aedaf7;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 10px 0;
+    z-index: 99;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}

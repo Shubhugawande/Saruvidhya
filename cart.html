@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="Css/cart.css">
+</head>
+<body>
+
+    <!-- header Section -->
+
+        <header>
+
+            <section>
+
+                <!-- navbar -->
+
+            <nav class="navbar">
+
+                    <div class="logo"></div>
+
+                    <input type="checkbox" id="menu-toggle" />
+
+                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+                    <ul class="nav-links">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="cart.html">Cart 🛒</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </section>
+
+        </header>
+
+    <!-- main Section -->
+
+    <main>
+
+        <h1>Your Shopping Cart</h1>
+        <div id="cartItems"></div>
+        <div class="total" id="totalAmount">Total: ₹0</div>
+
+        <div class="form-section">
+            <h2>Customer Details</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="mobile">Mobile Number</label>
+            <input type="text" id="mobile" placeholder="Enter mobile number">
+
+            <label for="address">Address</label>
+            <select name="Address" id="Address">
+                <option value="select">Select</option>
+                <option value="ABC College">ABC College</option>
+                <option value="XYZ College">XYZ College</option>
+            </select>
+            <br>
+            <button onclick="buyNow()">Buy Now</button>
+        </div>
+
+ 
+
+    </main>
+
+   <!-- footer Section -->
+
+        <footer>
+
+            <p>&copy; 2025 NotesStore. All rights reserved.</p>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a> 
+                <a href="contact.html">Contact</a> 
+                <a href="about.html">About</a> 
+                <a href="store.html">Store</a>
+
+            </div>
+
+        </footer>
+    
+</body>
+ <script src="Js/cart.js"></script>
+</html>

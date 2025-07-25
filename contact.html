@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Css/contact.css">
+</head>
+<body>
+
+    <!-- header Section -->
+
+        <header>
+
+            <section>
+
+                <!-- navbar -->
+
+            <nav class="navbar">
+
+                    <div class="logo"></div>
+
+                    <input type="checkbox" id="menu-toggle" />
+
+                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+                    <ul class="nav-links">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="cart.html">Cart 🛒</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </section>
+
+        </header>
+
+        <main>
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, feedback, or want to order directly — feel free to contact us!</p>
+
+                <form id="contactForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="mobile">Mobile Number</label>
+                <input type="text" id="mobile" placeholder="Enter your mobile number" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Write your message..." required></textarea>
+
+                <button type="submit">Send Message</button>
+                <div id="statusMsg" class="status-msg"></div>
+                </form>
+            </div>
+        </main>
+
+        <!-- footer Section -->
+
+        <footer>
+
+            <p>&copy; 2025 NotesStore. All rights reserved.</p>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a> 
+                <a href="contact.html">Contact</a> 
+                <a href="about.html">About</a> 
+                <a href="store.html">Store</a>
+
+            </div>
+
+        </footer>
+    
+</body>
+<script src="Js/contact.js"></script>
+</html>

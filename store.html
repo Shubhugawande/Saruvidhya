@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>store page</title>
+        <link rel="stylesheet" href="Css/store.css">
+
+    </head>
+
+    <body>
+
+        <!-- header Section -->
+
+        <header>
+
+            <section>
+
+                <!-- navbar -->
+
+            <nav class="navbar">
+
+                    <div class="logo"></div>
+
+                    <input type="checkbox" id="menu-toggle" />
+
+                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+                    <ul class="nav-links">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="cart.html">Cart 🛒</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </section>
+
+        </header>
+
+        <!-- main Section -->
+
+        <main>
+
+            <!-- Heading Section -->
+            
+            <h1>Welcome to My Store</h1>
+
+            <!-- store-container Section -->
+
+            <div class="store-container">
+
+                <!-- Product Template (Copy-Paste this block for more products) -->
+                 
+                <div class="product-card">
+                <img src="Images/Coverpage.png" alt="Product 1">
+                <h3>Product 1 Name</h3>
+                <p class="price">₹150</p>
+                <button onclick="addToCart('Product 1 Name', 150)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                <img src="Images/Coverpage.png" alt="Product 2">
+                <h3>Product 2 Name</h3>
+                <p class="price">₹250</p>
+                <button onclick="addToCart('Product 2 Name', 250)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                <img src="Images/Coverpage.png" alt="Product 3">
+                <h3>Product 3 Name</h3>
+                <p class="price">₹400</p>
+                <button onclick="addToCart('Product 3 Name', 400)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                <img src="Images/Coverpage.png" alt="Product 4">
+                <h3>Product 4 Name</h3>
+                <p class="price">₹180</p>
+                <button onclick="addToCart('Product 4 Name', 180)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                <img src="Images/Coverpage.png" alt="Product 5">
+                <h3>Product 5 Name</h3>
+                <p class="price">₹200</p>
+                <button onclick="addToCart('Product 5 Name', 200)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                <img src="Images/Coverpage.png" alt="Product 6">
+                <h3>Product 6 Name</h3>
+                <p class="price">₹500</p>
+                <button onclick="addToCart('Product 6 Name', 500)">Add to Cart</button>
+                </div>
+
+            </div>
+
+            <!-- button Section -->
+
+            <a href="cart.html" class="cart-link">Go to Cart</a>
+
+        </main>
+
+        <!-- footer Section -->
+
+        <footer>
+
+            <p>&copy; 2025 NotesStore. All rights reserved.</p>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a> 
+                <a href="contact.html">Contact</a> 
+                <a href="about.html">About</a> 
+                <a href="store.html">Store</a>
+
+            </div>
+
+        </footer>
+        
+    </body>
+   <script src="Js/store.js"></script>
+
+</html>
